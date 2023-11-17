@@ -9,7 +9,7 @@ import (
 
 func main() {
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "Usage: %s [options] [CIDR] [output_path_optional]\n\nOptions:\n", os.Args[0])
+		fmt.Fprintf(os.Stderr, "Usage: %s [options] [CIDR] [output_path_optional]\n\n", os.Args[0])
 		flag.PrintDefaults()
 		fmt.Fprintf(os.Stderr, "\nExample:\n%s 192.168.0.0/24 /tmp/output.txt\n", os.Args[0])
 	}
